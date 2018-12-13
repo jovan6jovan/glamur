@@ -321,6 +321,7 @@ h1, h2:not(#logo), p {margin-bottom: 2rem;}
 /* FOOTER */
 
 .footer {
+    font-size: 0.875rem;
     margin: 2rem;
     background: #FEFCFB;
     color: #383838;
@@ -330,10 +331,14 @@ h1, h2:not(#logo), p {margin-bottom: 2rem;}
     align-items: center;
 }
 
-.copyright {
-    margin: 0;
+.copy-and-design-info {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
+
+.copy-and-design-info p { margin: 0;}
+.copy-and-design-info a { color: #383838; }
 
 .footer-nav { display: none; }
 
@@ -369,8 +374,10 @@ h1, h2:not(#logo), p {margin-bottom: 2rem;}
 
 
 
-/* ========================================================================================================================
-DESKTOP LAYOUT */
+
+/* ===============================================================================
+DESKTOP LAYOUT
+================================================================================== */
 
 @media screen and (min-width: 1281px) {
 
@@ -597,6 +604,11 @@ DESKTOP LAYOUT */
     
     .footer-info { text-align: left; }
     
+    .copy-and-design-info {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
 } /* media query zagrada */
 
 
@@ -609,9 +621,9 @@ DESKTOP LAYOUT */
 
 
 
-/* ==================================================================================================================================================
+/* ===============================================================================
 TABLETS, IPADS (PORTRAIT)
-*/
+================================================================================== */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     
@@ -671,9 +683,9 @@ TABLETS, IPADS (PORTRAIT)
 
 
 
-/* ==================================================================================================================================================
+/* ===============================================================================
 LAPTOPS
-*/
+================================================================================== */
 
 
 @media (min-width: 1025px) and (max-width: 1280px) {

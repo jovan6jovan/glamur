@@ -1,0 +1,253 @@
+
+/* ABOUT-BANNER */
+
+.about-banner {
+    background-image: url('../img/about-banner.png');
+    background-position: center;
+    background-size: cover;
+    color: #383838;
+    min-height: 40vh;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/* ABOUT-INFO */
+
+.about-info {
+    font-family: 'Didact Gothic', sans-serif;
+    background-image: linear-gradient(114.67196031231879deg, rgba(246, 245, 245,1) 5.736111111111111%,rgba(220, 220, 220,1) 96.29166666666666%);
+    color: #383838;
+}
+
+.about-info p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.about-info h2 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem !important;
+}
+
+.about-p-lg {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about-info-img-for-desktop,
+.h2-for-desktop {
+    display: none;
+}
+
+.float {
+    width: 200px;
+    height: 220px;
+    margin: 1rem;
+    float: left;
+    shape-outside: circle();
+    clip-path: circle();
+}
+
+/* ABOUT-CARDS */
+
+.about-cards {
+    background: #383838;
+    color: #FEFCFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.about-cards p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-cards h4 {
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.about-cards h4::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #FEFCFB;
+}
+
+/* ABOUT PARALLAX */
+
+.about-parallax {
+    height: 50vh;
+    background: linear-gradient(rgba(218,65,103,0.8), rgba(218,65,103,0.5)),
+                url(../img/tools.jpg) no-repeat fixed center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FEFCFB;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-parallax h2 { font-size: 2rem; }
+
+/* ABOUT-CLIENTS */
+
+.about-clients h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+}
+
+blockquote {
+    width: 70%; /* 45% za desktop */
+    margin-left: 4rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 1.2rem 30px 1.2rem 60px;
+    /* border-left:8px solid #DA4167; - ovo za desktop */
+    position: relative;
+    background:#FEFCFB;
+    color: #383838;
+    font-family: 'Didact Gothic', sans-serif;
+    font-style: italic;
+}
+
+blockquote::before{
+    font-family: Arial;
+    content: "\201C";
+    color:#DA4167;
+    font-size:4rem;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+  }
+  
+  blockquote::after{
+    content: '';
+  }
+  
+  blockquote span{
+    display:block;
+    color:#383838;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  /* ABOUT-SERVICES */
+
+  .about-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #383838;
+    color: #FEFCFB;
+  }
+
+  .about-services h2,
+  .about-services a {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .about-services a {
+    color: #FEFCFB;
+  }
+
+  /* ===============================================================================
+DESKTOP LAYOUT
+================================================================================== */
+
+@media screen and (min-width: 1281px) {
+    
+    .about-banner {
+        min-height: 40vh;
+    }
+
+    .about-info {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-info-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+    }
+
+    .div-for-about-info-p-and-h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .float,
+    .h2-for-mobile {
+        display: none;
+    }
+
+    .h2-for-desktop {
+        display: block;
+    }
+
+    .about-info-img-for-desktop {
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .div-for-about-info-img-for-desktop img {
+        transition: transform .5s;
+    }
+
+    .div-for-about-info-img-for-desktop img:hover {
+        transform: scale(1.05);
+        transition: transform .5s;
+    }
+
+    .about-cards {
+        min-height: 40vh;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-cards h4::after {
+        width: 100%;
+    }
+
+    .about-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-card p {
+        width: 80%;
+    }
+
+    .quote-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
