@@ -178,10 +178,6 @@ DESKTOP LAYOUT
 ================================================================================== */
 
 @media screen and (min-width: 1281px) {
-    
-    .about-banner {
-        min-height: 40vh;
-    }
 
     .about-info {
         width: 100%;
