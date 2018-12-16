@@ -127,6 +127,7 @@ blockquote {
     color: #383838;
     font-family: 'Didact Gothic', sans-serif;
     font-style: italic;
+    font-size: 0.875rem;
 }
 
 blockquote::before{
@@ -239,6 +240,10 @@ DESKTOP LAYOUT
     
     .about-card p {
         width: 80%;
+    }
+
+    blockquote {
+        font-size: 24px;
     }
 
     .quote-container {

@@ -116,9 +116,13 @@
       color: #FEFCFB;
   }
 
-  .services-gallery h2 {
+  .services-gallery h2, p {
     margin-top: 1rem;
     text-align: center;
+}
+
+.services-gallery a {
+    color: #DA4167;
 }
 
   .services-gallery-container {
@@ -173,7 +177,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: #FEFCFB;
+      background: linear-gradient(114.67196031231879deg, rgba(246, 245, 245,1) 5.736111111111111%,rgba(220, 220, 220,1) 96.29166666666666%);
       color: #383838;
   }
 

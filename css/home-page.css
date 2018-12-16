@@ -527,10 +527,10 @@ DESKTOP LAYOUT
     
     .services-img {
         display: grid;
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 2rem;
+        margin-right: 2rem;
         margin-bottom: 1rem;
-        grid-gap: 30px;
+        grid-gap: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
     
@@ -613,14 +613,6 @@ DESKTOP LAYOUT
 
 
 
-
-
-
-
-
-
-
-
 /* ===============================================================================
 TABLETS, IPADS (PORTRAIT)
 ================================================================================== */
@@ -632,6 +624,7 @@ TABLETS, IPADS (PORTRAIT)
     .services-img {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 10px;
     }
     
 /*  GALLERY */
@@ -759,3 +752,12 @@ LAPTOPS
      
   
 }
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+    .services-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+ }
