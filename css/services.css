@@ -115,16 +115,78 @@
       background: #383838;
       color: #FEFCFB;
   }
-  
+
   .services-gallery h2 {
-      margin-top: 1rem;
-      text-align: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+  .services-gallery-container {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+  } 
+
+  .services-gallery-container > div > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: 5px;
   }
+
+  .services-gallery-container > div {
+      flex: 1 1 200px;
+  }
+
+  /* .vertical {
+      width: 150px;
+      height: 225px;
+  }
+
+  .normal {
+      width: 150px;
+      height: 150px;
+  }
+
+  .big {
+      width: 300px;
+      height: 280px; 
+  } */
+
+  /* .services-gallery-container {
+    line-height: 0;
+    column-count: 1;
+    column-gap: 0; 
+}
 
    .services-gallery img {
       width: 100%;
       height: auto;
-  } 
+      padding: 5px;
+  } */
+
+  /* SERVICES-CONTACT-US */
+
+  .services-contact-us {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #FEFCFB;
+      color: #383838;
+  }
+
+  .services-contact-us h2,
+  .services-contact-us a {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+  }
+
+  .services-contact-us a {
+      color: #383838;
+  }
 
 
   /* ===============================================================================
@@ -162,7 +224,17 @@ DESKTOP LAYOUT
 
     .dotted-list:last-child { margin-right: 0; }
 
+    /* .services-gallery-container {
+        max-width: 1024px;
+        margin: 0 auto;
+        column-count: 5;
+     } */
 
+     .services-gallery-container {
+         max-width: 1024px;
+         margin: 0 auto;
+     }
+    
  }
 
 
@@ -180,4 +252,12 @@ TABLETS, IPADS (PORTRAIT)
         grid-template-rows: auto;
     }
 
+    /* .services-gallery-container {
+        column-count: 3;
+     } */
+
+    .services-gallery-container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
 }
