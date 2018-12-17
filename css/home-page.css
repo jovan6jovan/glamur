@@ -315,6 +315,7 @@ h1, h2:not(#logo), p {margin-bottom: 2rem;}
 .date {
     color: #EAC435; 
     text-transform: uppercase;
+    letter-spacing: .2rem;
 }
 
 
@@ -372,7 +373,7 @@ h1, h2:not(#logo), p {margin-bottom: 2rem;}
 
 .footer-info { text-align: center; }
 
-
+.jovan a { color: #4862A3; }
 
 
 /* ===============================================================================
@@ -584,6 +585,13 @@ DESKTOP LAYOUT
         margin-left: 2rem;
         margin-right: 2rem;
     }
+
+    .posts article:hover {
+        margin: -5px 5px 5px -5px;
+        box-shadow: 5px 5px 0px 0px rgba(218, 65, 103, 0.5);
+        transition: all .5s;
+        cursor: pointer;
+    }
     
     .blog-posts > a { margin-top: 0; }
     
@@ -758,6 +766,13 @@ LAPTOPS
     .services-img {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .posts article:hover {
+        margin: -5px 5px 5px -5px;
+        box-shadow: 5px 5px 0px 0px rgba(218, 65, 103, 0.5);
+        transition: all .5s;
+        cursor: pointer;
     }
 
  }
