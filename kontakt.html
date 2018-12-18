@@ -9,6 +9,7 @@
     <link rel="icon" type="image" href="img/favicon/scissor-and-comb.png">
     <title>Kontakt | Frizerski salon Glamur Kaluđerica</title>
     <link rel="stylesheet" type="text/css" href="css/home-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
@@ -33,6 +34,71 @@
     </header>
     
     <button onclick="topFunction()" id="scroll-to-top" title="Nazad na početak"><i class="fas fa-angle-up"></i></button>
+
+    <section class="contact-banner">
+        <h2>Kontakt</h2>
+        <p>Možete nas kontaktirati pozivom, SMS-om, ili viber porukom na broj telefona koji je ispisan ispod. <br> A možete i preko kontakt forme.</p>
+    </section>
+
+    <!--
+        <div class="form-container">
+        <form action="#">
+          
+            <label for="fname">Ime</label>
+            <input type="text" id="fname" name="firstname" placeholder="Vaše ime">
+          
+            <label for="lname">Prezime</label>
+            <input type="text" id="lname" name="lastname" placeholder="Vaše prezime">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Vaš email">
+          
+            <label for="subject">Sadržaj poruke</label>
+            <textarea id="subject" name="subject" placeholder="Tekst Vaše poruke..." style="height:200px"></textarea>
+          
+            <input type="submit" value="Pošaljite">
+          
+        </form>
+    </div>
+    --> 
+
+    <section class="form-container">
+        <div class="wrapper animated bounceInLeft">
+            <div class="company-info">
+                <h3>Adresa i broj telefona:</h3>
+                <ul>
+                    <li><i class="fa fa-road"></i> Bulevar Revolucije 92a,
+                        Kaluđerica</li>
+                    <li><i class="fa fa-phone"></i> +381 64 256 38 95</li>
+                </ul>
+            </div>
+                
+            <div class="contact">
+                <form action="#">
+                  <p>
+                    <label for="name">Vaše ime</label>
+                    <input type="text" name="name">
+                  </p>
+                  <p>
+                    <label for="email">Vaš Email</label>
+                    <input type="email" name="email">
+                  </p>
+                  <p class="full">
+                    <label for="message">Vaša poruka</label>
+                    <textarea name="message" rows="5"></textarea>
+                  </p>
+                  <p class="full">
+                    <button>Pošaljite</button>
+                  </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-img">
+        <h2>Naša lokacija</h2>
+        <img src="img/mapa.png" alt="Frizerski salon Glamur lokacija">
+    </div>
 
     <footer>
         <div class="footer"> <!-- footer div -->
