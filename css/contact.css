@@ -15,8 +15,6 @@
     font-size: 1.5rem;
 }
 
-/* FORM-CONTAINER */
-
 /* .form-container {
     width: 80%;
     max-width: 900px;
@@ -54,6 +52,8 @@ textarea {
     background-color: #DA4167;
     color: #383838;
   } */
+
+/* FORM-CONTAINER */
 
   .form-container {
     max-width: 1366px;
@@ -96,12 +96,11 @@ textarea {
     background:#383838;
   }
 
-  /* FORM STYLES */
+/* FORM STYLES */
 
 .contact form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    display: flex;
+    flex-direction: column;
   }
   
   .contact form label {
@@ -109,7 +108,7 @@ textarea {
   }
   
   .contact form p {
-    margin: 0;
+    margin: .5rem 0;
   }
   
   .contact form .full {
@@ -138,43 +137,34 @@ textarea {
     cursor: pointer;
   }
   
-  /* LARGE SCREENS */
+/* LARGE SCREENS */
+
   @media (min-width:700px) {
 
     .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
     }
   
     .wrapper > * {
-        padding: 2rem;
+      padding: 2rem;
     }  
 
-    .company-info h3, .company-info ul, .brand{
-        text-align: left;
-      }
+    .company-info h3, .company-info ul, .brand {
+      text-align: left;
+    }
+
+    .contact form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    .contact form p { margin: 0; }
   
   }
 
-  /* CONTACT-IMG */
-
-  /* .contact-img {
-      max-width: 1440px;
-      margin: 2rem auto;
-      transition: transform .5s;
-  }
-
-  .contact-img h2 { text-align: center; }
-
-  .contact-img img {
-      width: 100%;
-      box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
-  }
-
-  .contact-img:hover {
-      transform: scale(1.1);
-      transition: transform .5s;
-  } */
+  /* CONTACT-LOCATION */
 
   .contact-location {
     max-width: 1440px;
@@ -198,5 +188,4 @@ textarea {
     }
 
   }
-
-
+  
