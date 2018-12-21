@@ -761,18 +761,4 @@ LAPTOPS
   
 }
 
-@media (min-width: 1281px) and (max-width: 1366px) {
 
-    .services-img {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .posts article:hover {
-        margin: -5px 5px 5px -5px;
-        box-shadow: 5px 5px 0px 0px rgba(218, 65, 103, 0.5);
-        transition: all .5s;
-        cursor: pointer;
-    }
-
- }
